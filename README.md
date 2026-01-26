@@ -5,14 +5,13 @@
 [![Puppet Forge](http://img.shields.io/puppetforge/v/ULHPC/multipath.svg)](https://forge.puppetlabs.com/ULHPC/multipath)
 [![License](http://img.shields.io/:license-GPL3.0-blue.svg)](LICENSE)
 ![Supported Platforms](http://img.shields.io/badge/platform-debian|centos-lightgrey.svg)
-[![Documentation Status](https://readthedocs.org/projects/ulhpc-puppet-multipath/badge/?version=latest)](https://readthedocs.org/projects/ulhpc-puppet-multipath/?badge=latest)
 
 Configure multipath to detect multiple paths to devices for fail-over or performance reasons and coalesces them
 
       Copyright (c) 2017 UL HPC Team <hpc-sysadmins@uni.lu>
 
 
-| [Project Page](https://github.com/ULHPC/puppet-multipath) | [Sources](https://github.com/ULHPC/puppet-multipath) | [Documentation](https://ulhpc-puppet-multipath.readthedocs.org/en/latest/) | [Issues](https://github.com/ULHPC/puppet-multipath/issues) |
+| [Project Page](https://github.com/ULHPC/puppet-multipath) | [Sources](https://github.com/ULHPC/puppet-multipath) | [Issues](https://github.com/ULHPC/puppet-multipath/issues) |
 
 ## Synopsis
 
