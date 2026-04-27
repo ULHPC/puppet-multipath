@@ -33,7 +33,7 @@ node default {
         rr_min_io            => '100',
         rr_weight            => 'uniform',
         no_path_retry        => '12',
-        user_friendly_names  => 'yes'
+        user_friendly_names  => 'yes',
     }
 
     multipath::device { 'SAN':
@@ -48,7 +48,7 @@ node default {
         rr_weight            => 'priorities',
         no_path_retry        => '5',
         rr_min_io            => '16',
-        failback             => '300'
+        failback             => '300',
     }
 
     multipath::blacklist { 'Storage server internals':
@@ -58,14 +58,14 @@ node default {
                     '^hd[a-z][[0-9]*]',
                     '^cciss\!c[0-9]d[0-9]*',
                     #           '^(sda|sdb|sde|sdh)'
-                    '^sda'
+                    '^sda',
                     ],
     }
 
     multipath::path {
         [
         '3600601606a47130037abf2635bb1e111',
-        '3600601606a4713005d362f7b5bb1e111'
+        '3600601606a4713005d362f7b5bb1e111',
         ]:
             ensure               => 'present',
             path_grouping_policy => 'group_by_prio',

@@ -18,7 +18,7 @@
 class multipath::common {
 
     # Load the variables used in this module. Check the multipath-params.pp file
-    require ::multipath::params
+    require multipath::params
 
     package { 'multipath':
         ensure => $multipath::ensure,
@@ -40,7 +40,7 @@ class multipath::common {
         require => Package['multipath'],
     }
 
-    include ::rclocal
+    include rclocal
     rclocal::update { 'Increase timeout for FC':
         ensure  => $multipath::ensure,
         content => template('multipath/rc.local.access_timeout.erb'),
